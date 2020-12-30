@@ -10,6 +10,7 @@
     <title>🛒 Mercado Liebre 🐇</title>
 </head>
 <body>
+    <!-- NAV BAR HEADER -->
 <header class="main-header">
     <div class="top-bar">
         <img src="/images/logo-mercado-liebre.svg" class="logo">
@@ -21,7 +22,7 @@
     <a href="#" class = "hamburguer-button"> <i class="fas fa-hamburger"></i></a>
     <nav class="bottom-bar">
         <ul class="nav-left">
-            <li><a href="#">Ofertas</a></li>
+            <li><a href="#"></a>Ofertas</a></li>
             <li><a href="#">Tiendas Oficiales</a></li>
             <li><a href="#">Vender</a></li>
             <li><a href="#">Ayuda</a></li>
@@ -34,5 +35,120 @@
     </nav>
     
 </header>
-</body>
+
+<!-- FORMULARIO -->
+<form class="formulario" action="" method="POST" >
+   <div class="control-form">
+       <label></label>
+       <input type="text" name="nombre" class="control" placeholder="Nombre del producto">
+   </div>
+   <div class="control-form">
+    <label></label>
+    <input type="text" name="precio" class="control" placeholder="Precio $100.000">
+</div>
+<div class="control-form">
+    <label>Esta en Oferta?</label>
+    <input type="radio" name="oferta"> si
+    <input type="radio" name="oferta"> no
+</div>
+<div class="control-form">
+    <label>Categoria</label>
+    <select name="categorias" class="control">
+        <option name="hogar">hogar</option>
+        <option name="Electro">Electrodomesticos</option>
+        <option name="Ropa">Indumentaria</option>
+    </select>
+</div>
+<div class="control-form">
+    <label></label>
+    <textarea name="Descripcion" class="control" placeholder="Descripción"></textarea>
+</div>
+
+<div class="control-form">
+    <button class="control-button" type="submit"> Guardar </button>
+    <button class="control-button" type="reset"> Cancelar </button>
+</div>
+</form>
+<!-- productos -->
+<main>
+    <section class="main-visita"> Basado en tu última visita
+    <div class="container-articles">
+        <article class="control-articles">
+            <img class="control-img" src="/images/img-cafetera-moulinex.jpg"alt="">
+        <div class="texto-articles">
+            <h4>$6.770</h4>
+            <h5>40% OFF</h5>
+            <h3>Cafetera Moulinex</h3>
+        </div>
+        </article>
+
+        <article class="control-articles">
+            <img class="control-img" src="/images/img-macbook-pro-2019.jpg"alt="">
+        <div class="texto-articles">
+            <h4>$230.000</h4>
+            <h5>20% OFF</h5>
+            <h3>MacBook Pro</h3>
+        </div>
+        </article>
+
+        <article class="control-articles">
+            <img class="control-img" src="/images/img-samsung-galaxy-s10.jpg"alt="">
+        <div class="texto-articles">
+            <h4>$70.500</h4>
+            <h5>10% OFF</h5>
+            <h3>Samsung Galaxy S10</h3>
+        </div>
+        </article>
+
+        <article class="control-articles">
+            <img class="control-img" src="/images/img-tv-samsung-smart.jpg"alt="">
+        <div class="texto-articles">
+            <h4>$23.200</h4>
+            <h5>5% OFF</h5>
+            <h3>SmarTv Samsung 43"</h3>
+        </div>
+        </article>
+    </div>
+    </section>
+
+    <section class="main-ofertas"> Ofertas
+        <div class="container-articles">
+            <article class="control-articles">
+                <img class="control-img" src="/images/img-cafetera-moulinex.jpg"alt="">
+            <div class="texto-articles">
+                <h4>$6.770</h4>
+                <h5>40% OFF</h5>
+                <h3>Cafetera Moulinex</h3>
+            </div>
+            </article>
+    
+            <article class="control-articles">
+                <img class="control-img" src="/images/img-macbook-pro-2019.jpg"alt="">
+            <div class="texto-articles">
+                <h4>$230.000</h4>
+                <h5>20% OFF</h5>
+                <h3>MacBook Pro</h3>
+            </div>
+            </article>
+    
+            <article class="control-articles">
+                <img class="control-img" src="/images/img-samsung-galaxy-s10.jpg"alt="">
+            <div class="texto-articles">
+                <h4>$70.500</h4>
+                <h5>10% OFF</h5>
+                <h3>Samsung Galaxy S10</h3>
+            </div>
+            </article>
+    
+            <article class="control-articles">
+                <img class="control-img" src="/images/img-tv-samsung-smart.jpg"alt="">
+            <div class="texto-articles">
+                <h4>$23.200</h4>
+                <h5>5% OFF</h5>
+                <h3>SmarTv Samsung 43"</h3>
+            </div>
+            </article>
+        </div>
+        </section>
+</main>
 </html>
