@@ -112,7 +112,7 @@ h5 {font-size:16px;
 }
 h4 {font-size:18px}
 .main-visita {
-    padding: 20px;
+  
     background-color: #ebebeb ;
     
 }
@@ -146,16 +146,20 @@ h4 {font-size:18px}
     line-height: 0;
 }
 
-.truck-icon {
-    margin: 5%;
-    color: #39b54a;
-    border: solid 1px;
-    border-color: #39b54a;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
+.fas.fa-truck {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    color: green;
+    background-color: #FFF;
     border-radius: 50%;
-    width: 10%;
-    height: 8%;
+    position: relative;
+    left: 80%;
+    bottom: 30px;
+    
 }
 
 .icono {margin: auto;}
