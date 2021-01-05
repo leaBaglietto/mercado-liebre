@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c9fff0c2b2.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>🛒 Mercado Liebre 🐇</title>
+</head>
+<body>
+    <!-- NAV BAR HEADER -->
+<header class="main-header">
+    <div class="top-bar">
+        <img src="/images/logo-mercado-liebre.svg" class="logo">
+        <p class = 'buscador'>barra buscador</p>
+        <h2 class="copy-header"><i class="fas fa-hand-holding-usd"></i>
+            Comprá en cuotas y sin tarjeta de crédito
+        </h2>
+    </div>
+    <a href="#" class = "hamburguer-button"> <i class="fas fa-hamburger"></i></a>
+    <nav class="bottom-bar">
+        <ul class="nav-left">
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Tiendas Oficiales</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="#">Ayuda</a></li>
+        </ul>
+        <ul class="nav-rigth">
+            <li><a href="register.html">Creá tu cuenta</a> <i class="fas fa-user-alt"></i></li>
+            <li><a href="#">Ingresá</a> <i class="fas fa-sign-in-alt"></i></li>
+            <li><a href="#">Mis compras</a> <i class="fas fa-shopping-cart"></i></li>
+        </ul>
+    </nav>
+    
+</header>
+
+<!-- FORMULARIO -->
+<form class="formulario" action="" method="POST" >
+   <div class="control-form">
+       <label></label>
+       <input type="text" name="nombre" class="control" placeholder="Nombre del producto">
+   </div>
+   <div class="control-form">
+    <label></label>
+    <input type="text" name="precio" class="control" placeholder="Precio $100.000">
+</div>
+<div class="control-form">
+    <label>Esta en Oferta?</label>
+    <input type="radio" name="oferta"> si
+    <input type="radio" name="oferta"> no
+</div>
+<div class="control-form">
+    <label>Categoria</label>
+    <select name="categorias" class="control">
+        <option name="hogar">hogar</option>
+        <option name="Electro">Electrodomesticos</option>
+        <option name="Ropa">Indumentaria</option>
+    </select>
+</div>
+<div class="control-form">
+    <label></label>
+    <textarea name="Descripcion" class="control" placeholder="Descripción"></textarea>
+</div>
+
+<div class="control-form">
+    <button class="control-button" type="submit"> Guardar </button>
+    <button class="control-button" type="reset"> Cancelar </button>
+</div>
+</form>
+
+<!--FOOTER-->
+<footer>
+    <div class="title-visita"> Copyright © 2021 MercadoLiebre by Turtle S.R.L. </div>
+</footer>
+</html>

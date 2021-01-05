@@ -10,6 +10,11 @@ app.use( express.static(publicPath));
 app.get ('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'views/index.html'))
 })
+
+app.get ('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views/register.html'))
+})
+
 app.listen (process.env.PORT || 3000, () => {
     console.log ('Liebre Corriendo')
 });
