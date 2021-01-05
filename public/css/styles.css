@@ -57,6 +57,17 @@ body {
     padding: 10px 0;
     margin: auto;
 }
+.nav-search {
+    margin: auto;
+    text-align:center;
+}
+.nav-search-input {
+    width: 12rem;
+    height:1rem;
+    box-shadow: 1px 1px 2px #525252 ;
+    border: none;
+    font-size: 10px;
+}
 
 h2 {text-align: center;
 font-size: 16px;}
@@ -182,6 +193,42 @@ h4 {font-size:18px}
 .icono {margin: auto;}
 
 
+/* Slider */
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: cambio 10s infinite alternate;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none; /* sacamos los puntitos */
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100;}
+    45% {margin-left: -100;}
+
+    50% {margin-left: -200;}
+    70% {margin-left: -200;}
+
+    75% {margin-left: -300;}
+    100% {margin-left: -300;}
+}
 /* FOOTER */
 .main-footer1 {
     padding: 2em;
@@ -192,10 +239,6 @@ h4 {font-size:18px}
     color:#1259c3;
     font-size: 2em;
     margin-bottom: 10px;
-}
-.control-footer1 {
-    border-right: solid 0.1rem rgb(200, 200, 200);
-    padding: 0rem 2rem;
 }
 
 .control-footer1 h2 {
@@ -211,8 +254,6 @@ h4 {font-size:18px}
 }
 
 .control-footer2 {
-    border-right: solid 0.1rem rgb(200, 200, 200);
-    padding: 0rem 2rem;
     text-align: center;
 }
 
@@ -259,9 +300,21 @@ h4 {font-size:18px}
     .nav-rigth li {
         margin: 0 5px;
     }
+    
     /* footer */
     .main-footer1 {
        display: flex;
+    }
+
+    .control-footer1 {
+        border-right: solid 0.1rem rgb(200, 200, 200);
+        padding: 0rem 2rem;
+    }
+    
+    .control-footer2 {
+        border-right: solid 0.1rem rgb(200, 200, 200);
+        padding: 0rem 2rem;
+        text-align: center;
     }
 }
 
@@ -299,5 +352,30 @@ h4 {font-size:18px}
     .logo {
         width: 300px;
         height: auto;
+    }
+
+    .nav-search {
+        margin: auto;
+        text-align:center;
+    }
+    .nav-search-input {
+        padding: 10px;
+        width: 20rem;
+        height:2rem;
+        box-shadow: 1px 1px 2px #525252 ;
+        border: none;
+        font-size: 10px;
+        color: #b9b9b9;
+    }
+
+    .control-footer1 {
+        border-right: solid 0.1rem rgb(200, 200, 200);
+        padding: 0rem 2rem;
+    }
+    
+    .control-footer2 {
+        border-right: solid 0.1rem rgb(200, 200, 200);
+        padding: 0rem 2rem;
+        text-align: center;
     }
 }
